@@ -1,0 +1,13 @@
+@use '../../../assets/fonts.scss' as f;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  min-width: 260px;
+  padding: 4%;
+  margin: 2%;
+  border: 1px solid black;
+  font-family: f.$text;
+
+}
