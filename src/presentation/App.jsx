@@ -7,9 +7,21 @@ import { words } from '../assets/data';
 function App() {
   return (
     <div>
-      {words.map((word, index) => (
-        <WordTable key={index} {...word}></WordTable>
-      ))}
+      <table className="word-table">
+        <thead>
+          <tr>
+            <th>Слово</th>
+            <th>Транскрипция</th>
+            <th>Перевод</th>
+            <th>Тема</th>
+          </tr>
+        </thead>
+        <tbody>
+          {words.map((word, index) => (
+            <WordTable key={index} {...word} />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
