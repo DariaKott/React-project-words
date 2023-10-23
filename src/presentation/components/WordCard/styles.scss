@@ -2,12 +2,12 @@
 
 .card {
   display: flex;
-  flex-direction: column;
-  width: 28%;
-  min-width: 260px;
-  padding: 4%;
-  margin: 2%;
+  flex-direction: row;
   border: 1px solid black;
   font-family: f.$text;
+}
 
+.word {
+  padding-left: 1%;
+  border: 1px solid red;
 }

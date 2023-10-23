@@ -2,18 +2,12 @@ import React from 'react';
 import './styles.scss';
 
 function WordCard(props) {
-
   return (
     <div className="card">
-      <h2>{props.word}</h2>
-      <p>{props.transcription}
-      </p>
-      <p>{props.meaning}
-      </p>
-      <p>{props.translation}
-      </p>
-      <p>{props.topic}
-      </p>
+      <div className="word">{props.english}</div>
+      <div className="word">{props.transcription}</div>
+      <div className="word">{props.russian}</div>
+      <div className="word">{props.tags}</div>
     </div>
   );
 }
