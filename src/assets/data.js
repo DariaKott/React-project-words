@@ -2,7 +2,7 @@ export const words = [
   {
     id: '14601',
     english: 'blue',
-    transcription: '[mama]',
+    transcription: '[blu:]',
     russian: 'синий',
     tags: 'цвет',
     tags_json: '["u0446u0432u0435u0442"]',

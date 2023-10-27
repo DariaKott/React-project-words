@@ -2,12 +2,22 @@
 
 .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
   border: 1px solid black;
   font-family: f.$text;
 }
 
 .word {
   padding-left: 1%;
-  border: 1px solid red;
+  // border: 1px solid red;
+  text-align: center;
+
+  &_tags {
+    align-self: flex-end;
+    padding-top: 5%;
+    font-size: smaller;
+  }
 }

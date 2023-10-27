@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.scss';
 
 function WordCard(props) {
+  const [showTranslation, setShowTranslation] = useState(false);
+
+  const handleShowTranslation = () => {
+    setShowTranslation(true);
+  };
+
+  const handleHideTranslation = () => {
+    setShowTranslation(false);
+  };
+
   return (
     <div className="card">
-      <div className="word">{props.english}</div>
-      <div className="word">{props.transcription}</div>
-      <div className="word">{props.russian}</div>
-      <div className="word">{props.tags}</div>
+      <h3 className="word word_word">{props.english}</h3>
+      <div className="word word_transcription">{props.transcription}</div>
+      {showTranslation ? (
+        <div>
+          <div className="word word_translation">{props.russian}</div>
+          <button onClick={handleHideTranslation}>Скрыть перевод</button>
+        </div>
+      ) : (
+        <button onClick={handleShowTranslation}>Показать перевод</button>
+      )}
+      <div className="word word_tags">{props.tags}</div>
     </div>
   );
 }
