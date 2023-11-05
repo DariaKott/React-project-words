@@ -60,7 +60,7 @@ export const words = [
     english: 'qwe',
     transcription: '[wqe]',
     russian: 'йцуцйу',
-    tags: '',
+    tags: 'длрд',
     tags_json: '[""]',
   },
 ];

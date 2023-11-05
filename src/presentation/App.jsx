@@ -1,15 +1,14 @@
 import React from 'react';
 import '../assets/global.scss';
-// import { List } from './components/WordList';
 import { WordTable } from './components/WordList';
 import { words } from '../assets/data';
-import { WordCard } from './components/WordCard';
+import Gallery from './components/CardGallery';
 
 function App() {
   return (
     <div>
       <div>
-        <WordCard {...words[0]} />
+        <Gallery />
       </div>
       <table className="word-table">
         <thead>
@@ -29,5 +28,7 @@ function App() {
     </div>
   );
 }
+
+// WordCard {...words[1]}
 
 export { App };
