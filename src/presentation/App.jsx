@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/global.scss';
-import { WordTableRow } from './components/WordList';
+import { WordTableRow } from './components/WordTableRow';
 import { words } from '../assets/data';
 import Gallery from './components/CardGallery';
 
