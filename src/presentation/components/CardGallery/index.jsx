@@ -26,9 +26,13 @@ function Gallery() {
 
   return (
     <div className="gallery_container">
-      <button onClick={previousCard}>{'<'}</button>
+      <button className="gallery_button" onClick={previousCard}>
+        {'<'}
+      </button>
       <WordCard key={words[count].id} {...words[count]} />
-      <button onClick={nextCard}>{'>'}</button>
+      <button className="gallery_button" onClick={nextCard}>
+        {'>'}
+      </button>
     </div>
   );
 }

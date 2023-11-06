@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/global.scss';
-import { WordTable } from './components/WordList';
+import { WordTableRow } from './components/WordList';
 import { words } from '../assets/data';
 import Gallery from './components/CardGallery';
 
@@ -20,15 +20,13 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          {words.map((word, index) => (
-            <WordTable key={index} {...word} />
+          {words.map((word) => (
+            <WordTableRow key={word.id} {...word} />
           ))}
         </tbody>
       </table>
     </div>
   );
 }
-
-// WordCard {...words[1]}
 
 export { App };
