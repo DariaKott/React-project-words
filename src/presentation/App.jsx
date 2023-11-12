@@ -3,6 +3,7 @@ import '../assets/global.scss';
 import { WordTableRow } from './components/WordTableRow';
 import { words } from '../assets/data';
 import Gallery from './components/CardGallery';
+import { AddWord } from './components/AddWordButton';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           ))}
         </tbody>
       </table>
+      <AddWord />
     </div>
   );
 }

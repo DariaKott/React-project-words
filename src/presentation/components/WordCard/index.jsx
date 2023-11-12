@@ -19,10 +19,14 @@ function WordCard(props) {
       {showTranslation ? (
         <div>
           <div className="word word_translation">{props.russian}</div>
-          <button onClick={handleHideTranslation}>Скрыть перевод</button>
+          <button className="button-style" onClick={handleHideTranslation}>
+            Скрыть перевод
+          </button>
         </div>
       ) : (
-        <button onClick={handleShowTranslation}>Показать перевод</button>
+        <button className="button-style" onClick={handleShowTranslation}>
+          Показать перевод
+        </button>
       )}
       <div className="word word_tags">{props.tags}</div>
     </div>

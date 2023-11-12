@@ -10,3 +10,17 @@ body {
   padding: 0;
 }
 
+.button-style {
+  border: none;
+  border-radius: 2px;
+  // border: 1px solid rgb(0, 195, 255);
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: turquoise;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+  }
+}
