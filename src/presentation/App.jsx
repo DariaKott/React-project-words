@@ -4,13 +4,13 @@ import { WordTableRow } from './components/WordTableRow';
 import { words } from '../assets/data';
 import Gallery from './components/CardGallery';
 import { AddWord } from './components/AddWordButton';
+import { Header } from './components/Header';
 
 function App() {
   return (
     <div>
-      <div>
-        <Gallery />
-      </div>
+      <Header />
+      <h1>Учим слова</h1>
       <table className="word-table">
         <thead>
           <tr>
