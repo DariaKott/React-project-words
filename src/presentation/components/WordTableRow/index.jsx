@@ -3,15 +3,6 @@ import './styles.scss';
 import '../../../assets/global.scss';
 
 function WordTableRow(props) {
-  //   return (
-  //     <tr>
-  //       <td>{props.english}</td>
-  //       <td>{props.transcription}</td>
-  //       <td>{props.russian}</td>
-  //       <td>{props.tags}</td>
-  //     </tr>
-  //   );
-  // }
   const [isEditing, setIsEditing] = useState(false);
 
   const handleEditClick = () => {
@@ -19,8 +10,9 @@ function WordTableRow(props) {
   };
 
   const handleSaveClick = () => {
-    // Сохранение изменений и отправка на сервер (если необходимо)
+    // Сохранение изменений и отправка на сервер (пока без сохранения)
     setIsEditing(false);
+    console.log('что-то поменялось');
   };
 
   const handleInputChange = (event) => {

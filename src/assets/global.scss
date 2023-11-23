@@ -10,6 +10,13 @@ body {
   padding: 0;
 }
 
+.app_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 .button-style {
   border: none;
   border-radius: 2px;

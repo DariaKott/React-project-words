@@ -5,10 +5,11 @@ import { words } from '../assets/data';
 import Gallery from './components/CardGallery';
 import { AddWord } from './components/AddWordButton';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <div className="app_wrapper">
       <Header />
       <h1>Учим слова</h1>
       <table className="word-table">
@@ -27,6 +28,7 @@ function App() {
         </tbody>
       </table>
       <AddWord />
+      <Footer />
     </div>
   );
 }
