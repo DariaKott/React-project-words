@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <div className="header_logo">
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <div className="header_nav">
         <button className="button-style">
@@ -20,7 +22,7 @@ function Header() {
           <Link to="/how-to-learn">Как учить</Link>
         </button>
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -24,9 +24,13 @@ function WordCard(props) {
           </button>
         </div>
       ) : (
-        <button className="button-style" onClick={handleShowTranslation}>
-          Показать перевод
-        </button>
+        <div>
+          <div> </div>
+          <br />
+          <button className="button-style" onClick={handleShowTranslation}>
+            Показать перевод
+          </button>
+        </div>
       )}
       <div className="word word_tags">{props.tags}</div>
     </div>

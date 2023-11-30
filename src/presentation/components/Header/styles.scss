@@ -1,15 +1,18 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: flex-start;
   width: 100vw;
+  margin-bottom: 5em;
 }
 
 .header_nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  width: 100%;
 }
 
 .header_logo {
   align-self: flex-start;
+  padding-left: 2%;
 }
