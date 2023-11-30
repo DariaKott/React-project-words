@@ -1,6 +1,15 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: sticky;
+  justify-content: stretch;
+  width: 100vw;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header_logo {
+  align-self: flex-start;
 }
