@@ -1,6 +1,5 @@
-.list {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  flex-wrap: wrap;
+.cell_transcription,
+.cell_tags,
+.cell_index {
+  background-color: rgb(228, 227, 227);
 }

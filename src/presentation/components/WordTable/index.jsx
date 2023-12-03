@@ -8,6 +8,7 @@ function WordTable(props) {
     <table className="word-table">
       <thead>
         <tr>
+          <th>#</th>
           <th>Слово</th>
           <th>Транскрипция</th>
           <th>Перевод</th>
@@ -15,8 +16,8 @@ function WordTable(props) {
         </tr>
       </thead>
       <tbody>
-        {words.map((word) => (
-          <WordTableRow key={word.id} {...word} />
+        {words.map((word, index) => (
+          <WordTableRow key={word.id} index={index + 1} {...word} />
         ))}
       </tbody>
     </table>

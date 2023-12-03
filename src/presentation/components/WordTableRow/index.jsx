@@ -22,7 +22,8 @@ function WordTableRow(props) {
 
   return (
     <tr>
-      <td>
+      <td className="cell_index">{props.index}</td>
+      <td className="cell_word">
         {isEditing ? (
           <input
             type="text"
@@ -33,7 +34,7 @@ function WordTableRow(props) {
           props.english
         )}
       </td>
-      <td>
+      <td className="cell_transcription">
         {isEditing ? (
           <input
             type="text"
@@ -44,7 +45,7 @@ function WordTableRow(props) {
           props.transcription
         )}
       </td>
-      <td>
+      <td className="cell_translation">
         {isEditing ? (
           <input
             type="text"
@@ -55,7 +56,7 @@ function WordTableRow(props) {
           props.russian
         )}
       </td>
-      <td>
+      <td className="cell_tags">
         {isEditing ? (
           <input type="text" value={props.tags} onChange={handleInputChange} />
         ) : (
