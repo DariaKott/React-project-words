@@ -2,12 +2,14 @@
 
 * {
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  min-width: 300px;
 }
 
 .app_wrapper {
@@ -29,5 +31,11 @@ body {
   &:hover {
     background-color: aquamarine;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 1.1rem;
   }
 }
